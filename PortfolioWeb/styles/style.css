@@ -23,6 +23,57 @@ body {
   color: white;
 }
 
+#about-body {
+  background: #38d39f;
+  min-height: 100vh;
+}
+
+.about-intro {
+  text-align: center;
+  margin-top: 4rem;
+
+  color: #323543;
+}
+
+.about-intro h2 {
+  color: white;
+  margin-top: 0.1rem;
+  font-size: 12rem;
+  /* -webkit-text-stroke: 0.0000000001rem rgb(0, 0, 0, 0.8);
+  -webkit-text-fill-color: rgb(255, 255, 255); */
+  text-shadow: 1.7px 0.1px 0 rgb(0, 0, 0);
+}
+
+.about-intro h4 {
+  color: #323543;
+  font-size: 2.2rem;
+}
+
+.about-me-text {
+  background: #38a4d3;
+
+  height: 19rem;
+  width: 54rem;
+  margin: 0 auto 3rem auto;
+  opacity: 50%;
+  border-radius: 2rem;
+  border-bottom: 3px solid #878787;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.6);
+  transform: rotate(9deg);
+  position: relative;
+  bottom: 5rem;
+}
+.about-intro p {
+  color: rgb(0, 0, 0);
+  position: relative;
+  top: 9rem;
+  left: 3rem;
+  z-index: 2;
+  width: 55rem;
+  margin: auto;
+  text-align: left;
+  font-weight: bold;
+}
 h1 {
   font-size: 2.5rem;
 }
@@ -419,8 +470,15 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-bottom: ;
 }
-
+.about-footer{
+  min-height: 10vh;
+  
+}
+.main-sec{
+  min-height: 90vh;
+}
 footer ul {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 40rem;
@@ -444,6 +502,21 @@ footer h4 {
   -ms-flex: 1 1 40rem;
   flex: 1 1 40rem;
 }
+.work {
+  border-radius: 2rem;
+  height: 7rem;
+  width: 14rem;
+  background-color: #38d39f;
+  border: #38d39f;
+  color: #292828;
+  margin-left: 17rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.work:hover {
+  background-color: #b9e6e6;
+  transform: scale(1.4);
+}
 
 footer #github:hover {
   fill: white;
@@ -456,24 +529,79 @@ footer #github:hover {
   filter: saturate(20);
 }
 
+.contact {
+  width: 75%;
+  margin: auto auto auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 3rem;
+  color: white;
+}
+
+.contact h3 {
+  font-size: 3rem;
+}
+
+.container .box {
+  margin-left: 0;
+}
+
+.box {
+  background: #2b2832;
+  width: 40rem;
+  height: 10rem;
+  border-radius: 2rem;
+  border-bottom: rgba(0, 0, 0, 0.2) 3px solid;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 60%);
+}
+.box h3 {
+  margin-left: 1.4rem;
+  margin-top: 1rem;
+}
+.box p {
+  margin-left: 1.4rem;
+  font-size: 2rem;
+  color: #8b8b8b;
+}
+.linked-click p:hover {
+  color: #38d39f;
+}
+
 @media screen and (max-width: 1332px) {
   html {
     font-size: 53%;
   }
-  /* .splash {
-    display: none;
-  } */
+gn-items: center;
+  }
+  .box {
+   
+    margin:  2rem ;
+  }
   svg {
     width: 80%;
   }
   nav {
     width: 100%;
   }
+ 
 }
 
 @media screen and (max-width: 1230px) {
   html {
     font-size: 50%;
+  }
+  .work {
+    margin-left: 15rem;
   }
   .splash {
     display: none;
@@ -486,10 +614,41 @@ footer #github:hover {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .work {
+    margin-left: 5rem;
+  }
+  .splash {
+    display: none;
+  }
+  svg {
+    width: 70%;
+  }
+  nav {
+    width: 100%;
+  }
+  .contact {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 754px) {
   html {
     font-size: 45%;
   }
+
   svg {
     height: 60%;
   }
@@ -530,20 +689,19 @@ footer #github:hover {
   .intro-social a {
     margin: 2rem;
   }
-  .elena,
-  .travelly {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 50rem;
-    flex: 1 1 50rem;
-  }
-  .elena img,
-  .travelly img {
-    width: 100%;
-    height: 100%;
-  }
+ 
   form {
     padding: 0rem;
     width: 100%;
+  }
+  .intro-text h2{
+    font-size: 8rem;
+  }
+  .about-intro p{
+    width: 50rem;
+  }
+  .about-me-text{
+    width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
