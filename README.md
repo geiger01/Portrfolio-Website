@@ -1,6 +1,6 @@
 
 # Portrfolio-Website
-Responsive portfolio website built with javascript, html and css with sass 
+Responsive portfolio website built with javascript, html and css . 
 
 ![home](https://user-images.githubusercontent.com/78149229/120899921-bc085e80-c63a-11eb-8563-4c6335496650.png)
 
