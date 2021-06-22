@@ -91,3 +91,17 @@ projectLinks.forEach((link) => {
         link.classList.remove("link-hover-2");
     });
 });
+
+
+//my nav name animation
+
+jonathan.addEventListener("click", navNameHover);
+jonathan.addEventListener("animationend", navNameHoverOff);
+
+function navNameHover() {
+    jonathan.style.animation = "animate-work 0.7s ease-in-out";
+}
+function navNameHoverOff() {
+    jonathan.style.animation = "";
+    document.location.href = "/";
+}
