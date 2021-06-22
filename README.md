@@ -6,7 +6,8 @@ Responsive portfolio website built with javascript, html and css .
 
 ![projects](https://user-images.githubusercontent.com/78149229/120899928-c296d600-c63a-11eb-90c3-a673e431bfa0.png)
 
-![about](https://user-images.githubusercontent.com/78149229/120899932-c9254d80-c63a-11eb-8ca5-4a31b9c819c9.png)
+![Untitled](https://user-images.githubusercontent.com/78149229/122948302-7d390f00-d383-11eb-9cbe-1f09fe73e07e.png)
+
 
 
 
